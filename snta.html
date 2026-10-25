@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8e7ed">
+  <meta name="description" content="Portofolio pribadi Sinta Dwi Aryani, mahasiswa Sistem Informasi.">
+  <title>Sinta Dwi Aryani — Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--pink:#f3dce5;--pink-strong:#d985a4;--pink-deep:#a84e70;--sage:#dce7d9;--sage-deep:#718a70;--cream:#fffaf8;--ink:#342d31;--muted:#776c71;--white:#fff;--line:#eadde1;--shadow:0 18px 55px rgba(114,76,91,.11);--radius:24px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}.container{width:min(1120px,calc(100% - 40px));margin:auto}.section{padding:100px 0}.section-head{max-width:650px;margin:0 auto 48px;text-align:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--pink-deep);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}.eyebrow:before{content:"";width:25px;height:1px;background:currentColor}.section h2{font:600 clamp(2rem,4vw,3rem)/1.15 "Playfair Display",serif;margin:13px 0}.section-head p,.muted{color:var(--muted)}.section-head p{margin:0}.site-header{position:sticky;top:0;z-index:50;background:rgba(255,250,248,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(234,221,225,.75)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:700 1.25rem "Playfair Display",serif;white-space:nowrap}.brand span{color:var(--pink-deep)}.nav-links{display:flex;align-items:center;gap:25px}.nav-links a{font-size:.9rem;color:#645960;transition:color .2s}.nav-links a:hover,.nav-links a.active{color:var(--pink-deep)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 21px;background:var(--pink-deep);color:white;font-weight:700;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}.nav-cta{padding:10px 17px;font-size:.88rem}.btn:hover,.nav-cta:hover{transform:translateY(-3px);box-shadow:0 10px 24px #a84e7030}.btn.secondary{background:var(--sage);color:#3f5940}.btn.outline{background:transparent;color:var(--pink-deep);border:1px solid #d9a2b6}.menu-toggle{display:none;background:none;border:0;color:var(--ink);font-size:1.5rem;cursor:pointer}
+    .hero{position:relative;overflow:hidden;padding:75px 0 95px;background:radial-gradient(circle at 8% 18%,#f8e7ed 0,transparent 29%),radial-gradient(circle at 92% 80%,#e6eee2 0,transparent 28%),var(--cream)}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:65px}.hero-copy{position:relative;z-index:1}.hero-kicker{display:inline-flex;align-items:center;gap:8px;background:#fff8f9;border:1px solid #f0d9e2;padding:8px 14px;border-radius:999px;font-size:.83rem;color:var(--pink-deep);font-weight:600}.hero h1{font:600 clamp(3rem,6.5vw,5.25rem)/1.03 "Playfair Display",serif;letter-spacing:-.045em;margin:25px 0 20px}.hero h1 span{color:var(--pink-deep);font-style:italic}.hero-copy>p{max-width:540px;color:var(--muted);font-size:1.06rem}.hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}.hero-note{display:flex;align-items:center;gap:12px;margin-top:32px;color:var(--muted);font-size:.88rem}.tiny-dot{width:9px;height:9px;border-radius:50%;background:var(--sage-deep);box-shadow:0 0 0 5px #dce7d980}.hero-visual{position:relative;min-height:450px;display:grid;place-items:center}.portrait-frame{width:min(350px,83%);height:405px;position:relative;border-radius:180px 180px 35px 35px;background:linear-gradient(145deg,#f0d4df,#e2ebde);padding:12px;transform:rotate(2deg);box-shadow:var(--shadow)}.portrait-inner{height:100%;border:1px dashed #b98b9c;border-radius:170px 170px 28px 28px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:rgba(255,255,255,.35);padding:25px}.portrait-inner img{display:none;width:100%;height:100%;object-fit:cover;border-radius:inherit}.portrait-inner.has-photo img{display:block}.portrait-inner.has-photo .photo-placeholder{display:none}.photo-placeholder .avatar-icon{width:100px;height:100px;display:grid;place-items:center;border-radius:50%;background:#fff8f8;color:var(--pink-deep);font-size:2.6rem;margin:0 auto 20px}.photo-placeholder strong{display:block;font:600 1.25rem "Playfair Display",serif}.photo-placeholder p{font-size:.8rem;color:var(--muted);max-width:200px;margin:8px auto 18px}.upload-label{cursor:pointer;border:1px solid #d6a2b5;background:#fff9fb;color:var(--pink-deep);border-radius:999px;padding:9px 14px;font-size:.8rem;font-weight:700}.upload-label input{display:none}.float-card{position:absolute;background:#fff;border:1px solid #f0e3e7;border-radius:17px;padding:14px 17px;box-shadow:var(--shadow);font-size:.84rem;animation:float 5s ease-in-out infinite}.float-card b{display:block;font:600 1rem "Playfair Display",serif}.float-card.one{left:0;top:70px}.float-card.two{right:0;bottom:65px;animation-delay:-2s}.sparkle{position:absolute;color:var(--pink-deep);font-size:1.6rem}.sparkle.s1{top:35px;right:40px}.sparkle.s2{bottom:35px;left:30px;color:var(--sage-deep)}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;align-items:center}.about-art{min-height:350px;border-radius:30px;background:linear-gradient(135deg,#f5e0e8,#e2ebdf);position:relative;display:grid;place-items:center;overflow:hidden}.about-art:before,.about-art:after{content:"";position:absolute;border:1px solid #ffffffa8;border-radius:50%;width:260px;height:260px}.about-art:after{width:330px;height:330px}.about-quote{position:relative;z-index:1;max-width:260px;text-align:center;font:600 2rem/1.25 "Playfair Display",serif}.about-quote span{color:var(--pink-deep);font-style:italic}.about-copy h2{font:600 clamp(2rem,4vw,3rem)/1.15 "Playfair Display",serif;margin:12px 0 20px}.about-copy p{color:var(--muted)}.quick-facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.pill{border:1px solid var(--line);background:#fff;padding:9px 13px;border-radius:999px;font-size:.84rem;color:#63565d}
+    .education{background:#f7eef1}.edu-card{max-width:760px;margin:auto;display:flex;gap:23px;padding:30px;background:#fff;border:1px solid #f0e0e6;border-radius:var(--radius);box-shadow:var(--shadow);align-items:flex-start}.edu-icon{flex:0 0 62px;height:62px;border-radius:18px;display:grid;place-items:center;background:var(--sage);font-size:1.65rem}.edu-card h3{margin:0 0 5px;font:600 1.35rem "Playfair Display",serif}.edu-card p{margin:0;color:var(--muted)}.edu-tag{display:inline-block;margin-top:14px;background:#f8e8ee;color:var(--pink-deep);font-size:.8rem;font-weight:700;padding:6px 10px;border-radius:8px}
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.skill-card{padding:28px 25px;border-radius:22px;background:white;border:1px solid var(--line);transition:transform .25s,box-shadow .25s}.skill-card:hover,.project-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}.skill-icon{width:54px;height:54px;display:grid;place-items:center;border-radius:17px;background:var(--sage);font-size:1.5rem;margin-bottom:20px}.skill-card:nth-child(2) .skill-icon{background:var(--pink)}.skill-card h3{font:600 1.25rem "Playfair Display",serif;margin:0 0 8px}.skill-card p{margin:0;color:var(--muted);font-size:.93rem}
+    .projects{background:#f7eef1}.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.project-card{overflow:hidden;background:white;border:1px solid #f0dfe5;border-radius:23px;transition:transform .25s,box-shadow .25s}.project-art{height:190px;display:grid;place-items:center;position:relative;overflow:hidden;background:linear-gradient(135deg,#e7efdf,#f4dce6)}.project-card:nth-child(2) .project-art{background:linear-gradient(135deg,#f5e6e9,#e4eaf3)}.project-card:nth-child(3) .project-art{background:linear-gradient(135deg,#e2ebdf,#f5e5d8)}.project-card:nth-child(4) .project-art{background:linear-gradient(135deg,#f5dce6,#dfe9dd)}.project-art .mock-window{width:68%;height:120px;background:#ffffffd9;border:1px solid #fff;border-radius:12px;box-shadow:0 12px 25px #75596720;padding:12px;transform:rotate(-3deg)}.mock-bar{height:7px;width:45%;border-radius:10px;background:#dba2b7;margin-bottom:10px}.mock-line{height:5px;border-radius:8px;background:#d8ded5;margin:7px 0;width:85%}.mock-line.short{width:55%}.mock-blocks{display:flex;gap:7px;margin-top:12px}.mock-blocks i{height:30px;flex:1;border-radius:6px;background:#e5eddf}.project-art .big-icon{position:absolute;font-size:3rem;right:15%;bottom:12%;filter:drop-shadow(0 6px 7px #785b6620)}.project-content{padding:23px}.project-content .tag{font-size:.75rem;font-weight:700;color:var(--sage-deep);text-transform:uppercase;letter-spacing:.08em}.project-content h3{font:600 1.35rem "Playfair Display",serif;margin:7px 0}.project-content p{font-size:.92rem;color:var(--muted);margin:0 0 15px}.project-link{font-size:.88rem;color:var(--pink-deep);font-weight:700}.project-link:hover{text-decoration:underline}.project-note{text-align:center;color:var(--muted);font-size:.86rem;margin:26px 0 0}
+    .goals-wrap{position:relative;overflow:hidden;border-radius:30px;background:linear-gradient(120deg,#f5dfe7,#e3ebdf);padding:55px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:35px}.goals-wrap h2{font:600 clamp(2rem,4vw,3rem)/1.15 "Playfair Display",serif;margin:13px 0}.goals-wrap p{max-width:680px;color:#62565b;margin:0}.goal-mark{width:130px;height:130px;display:grid;place-items:center;border-radius:50%;background:#ffffff8c;font-size:3rem;border:1px solid #ffffffb5}
+    .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px}.contact-info h3{font:600 1.7rem "Playfair Display",serif;margin:0 0 13px}.contact-info>p{color:var(--muted)}.social-list{display:grid;gap:12px;margin-top:27px}.social-link{display:flex;align-items:center;gap:13px;padding:13px 15px;border:1px solid var(--line);border-radius:15px;background:#fff;transition:border .2s,transform .2s}.social-link:hover{border-color:#d5a1b5;transform:translateX(4px)}.social-icon{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--pink);font-weight:700}.social-link:nth-child(2) .social-icon{background:var(--sage)}.social-link:nth-child(3) .social-icon{background:#f6e9d8}.social-link strong{display:block;font-size:.92rem}.social-link small{display:block;color:var(--muted);font-size:.78rem}.contact-form{padding:28px;border:1px solid var(--line);background:#fff;border-radius:24px;box-shadow:var(--shadow)}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{margin-bottom:16px}.field label{display:block;font-size:.86rem;font-weight:700;margin-bottom:7px}.field input,.field textarea{width:100%;border:1px solid #e8dce0;border-radius:12px;padding:13px 14px;background:#fffdfd;outline:none;transition:border .2s,box-shadow .2s}.field input:focus,.field textarea:focus{border-color:#d28ba6;box-shadow:0 0 0 3px #f3dce577}.field textarea{min-height:130px;resize:vertical}.form-hint{font-size:.78rem;color:var(--muted);margin:12px 0 0}.form-status{font-size:.85rem;color:var(--sage-deep);margin-top:12px;min-height:1.2em}
+    footer{padding:27px 0;border-top:1px solid var(--line);background:#fffaf8}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;color:var(--muted);font-size:.86rem}.footer-inner strong{color:var(--ink);font-family:"Playfair Display",serif}.back-top{position:fixed;right:22px;bottom:22px;z-index:30;width:46px;height:46px;border:0;border-radius:50%;background:var(--pink-deep);color:#fff;font-size:1.2rem;box-shadow:0 8px 25px #a84e7038;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(10px);transition:.25s}.back-top.show{opacity:1;visibility:visible;transform:translateY(0)}.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+    @media(max-width:900px){.nav-links{gap:15px}.nav-links a{font-size:.82rem}.nav-cta{display:none}.hero-grid{gap:30px}.hero-visual{min-height:390px}.portrait-frame{height:350px}.about-grid{gap:35px}.goals-wrap{padding:40px}.contact-grid{gap:25px}}
+    @media(max-width:720px){.container{width:min(100% - 32px,540px)}.section{padding:75px 0}.nav{height:68px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:#fffaf8;border-bottom:1px solid var(--line);padding:18px 24px 22px;flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:10px 0;font-size:.95rem}.hero{padding:52px 0 70px}.hero-grid{grid-template-columns:1fr;gap:15px}.hero h1{font-size:clamp(3rem,13vw,4.5rem)}.hero-copy>p{font-size:1rem}.hero-visual{min-height:370px}.portrait-frame{width:260px;height:325px}.float-card.one{left:1%;top:40px}.float-card.two{right:0;bottom:35px}.about-grid{grid-template-columns:1fr}.about-art{min-height:270px}.about-quote{font-size:1.7rem}.skills-grid{grid-template-columns:1fr}.skill-card{padding:24px}.project-grid{grid-template-columns:1fr}.project-art{height:175px}.goals-wrap{grid-template-columns:1fr;padding:32px 25px;text-align:center}.goals-wrap p{margin:auto}.goal-mark{width:90px;height:90px;font-size:2.2rem;margin:auto;grid-row:1}.contact-grid{grid-template-columns:1fr}.contact-form{padding:22px}.form-row{grid-template-columns:1fr;gap:0}.footer-inner{flex-direction:column;text-align:center;gap:6px}.section-head{margin-bottom:35px}}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Sinta Dwi Aryani, ke beranda">sinta<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#goals">My Goals</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Hubungi Saya ↗</a>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <div class="hero-kicker">✿ Personal Portfolio · 2026</div>
+        <h1>Halo,<br>Saya <span>Sinta Dwi Aryani</span></h1>
+        <p>Mahasiswa Sistem Informasi yang tertarik pada teknologi dan dunia digital. Saya senang belajar hal baru, mengembangkan ide, dan menciptakan karya yang bermanfaat.</p>
+        <div class="hero-actions"><a class="btn secondary" href="#about">Kenali Saya</a></div>
+        <div class="hero-note"><span class="tiny-dot"></span> Bertumbuh, belajar, dan berkarya setiap hari.</div>
+      </div>
+      <div class="hero-visual reveal">
+        <span class="sparkle s1">✦</span><span class="sparkle s2">✿</span>
+        <div class="float-card one">🌷 <b>Always learning</b><span>Selalu terbuka pada hal baru</span></div>
+        <div class="portrait-frame"><div class="portrait-inner has-photo" id="portraitInner">
+  <img id="profilePreview" src="profile.jpg" alt="Foto profil Sinta Dwi Aryani">
+</div></div>
+        <div class="float-card two">🌿 <b>Dream big</b><span>Langkah kecil, tujuan besar</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-art reveal"><div class="about-quote">“Menjadi versi terbaik dari <span>diriku</span>.”<div style="font:400 .85rem 'DM Sans',sans-serif;margin-top:17px;color:#776c71">— catatan perjalanan</div></div></div>
+      <div class="about-copy reveal"><span class="eyebrow">About Me</span><h2>Sedikit cerita tentang saya</h2>
+        <p>Halo! Saya Sinta Dwi Aryani, mahasiswa Program Studi Sistem Informasi di Universitas Komputama Majenang. Saya berasal dari Cilacap dan memiliki ketertarikan pada teknologi serta perkembangan dunia digital.</p>
+        <p>Di waktu luang, saya suka mendengarkan musik dan menonton. Saya percaya bahwa setiap pengalaman dapat menjadi kesempatan untuk belajar, mengenal diri sendiri, dan menemukan inspirasi baru.</p>
+        <div class="quick-facts"><span class="pill">📍 Cilacap</span><span class="pill">🎧 Mendengarkan musik</span><span class="pill">🎬 Menonton</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="section education" id="education">
+    <div class="container"><div class="section-head reveal"><span class="eyebrow">Education</span><h2>Perjalanan pendidikan</h2><p>Tempat saya mengembangkan pengetahuan dan mempersiapkan diri untuk masa depan.</p></div>
+      <article class="edu-card reveal"><div class="edu-icon">🎓</div><div><h3>Universitas Komputama Majenang</h3><p>Program Studi Sistem Informasi</p><span class="edu-tag">Mahasiswa</span></div></article>
+    </div>
+  </section>
+  <section class="section" id="skills">
+    <div class="container"><div class="section-head reveal"><span class="eyebrow">Skills</span><h2>Kemampuan yang terus diasah</h2><p>Saya ingin terus bertumbuh melalui pengalaman, kolaborasi, dan proses belajar.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><div class="skill-icon">💬</div><h3>Komunikasi</h3><p>Menyampaikan ide dengan jelas, mendengarkan dengan baik, dan terbuka terhadap masukan.</p></article>
+        <article class="skill-card reveal"><div class="skill-icon">🤝</div><h3>Kerja Sama Tim</h3><p>Berkolaborasi, menghargai perbedaan pendapat, dan berkontribusi untuk tujuan bersama.</p></article>
+        <article class="skill-card reveal"><div class="skill-icon">🌱</div><h3>Belajar Hal Baru</h3><p>Memiliki rasa ingin tahu dan semangat untuk mempelajari keterampilan serta teknologi baru.</p></article>
+      </div>
+    </div>
+  </section>
+    <section class="section" id="goals">
+    <div class="container"><div class="goals-wrap reveal"><div><span class="eyebrow">My Goals</span><h2>Bermimpi besar, berkarya dengan makna.</h2><p>Saya bercita-cita menjadi seorang <strong>businesswoman yang sukses dan berkarya</strong>—membangun sesuatu yang bernilai, terus mengembangkan diri, dan memberikan dampak positif melalui ide serta kreativitas.</p></div><div class="goal-mark">🌷</div></div></div>
+  </section>
+  <section class="section" id="contact">
+    <div class="container"><div class="section-head reveal"><span class="eyebrow">Contact</span><h2>Mari terhubung</h2><p>Punya ide, pertanyaan, atau ingin berkolaborasi? Kirim pesan melalui formulir di bawah.</p></div>
+      <div class="contact-grid">
+        <div class="contact-info reveal"><h3>Senang berkenalan denganmu!</h3><p>Lengkapi detail akun pada kode website agar tombol media sosial mengarah ke akun asli milikmu.</p>
+          <div class="social-list">
+            <a class="social-link" id="whatsappLink" href="#contact" aria-label="WhatsApp"><span class="social-icon">◉</span><span><strong>WhatsApp</strong><small id="whatsappLabel">Tambahkan nomor WhatsApp</small></span><span style="margin-left:auto">↗</span></a>
+            <a class="social-link" id="instagramLink" href="#contact" aria-label="Instagram"><span class="social-icon">◎</span><span><strong>Instagram</strong><small id="instagramLabel">Tambahkan username Instagram</small></span><span style="margin-left:auto">↗</span></a>
+            <a class="social-link" id="emailLink" href="#contact" aria-label="Email"><span class="social-icon">✉</span><span><strong>Email</strong><small id="emailLabel">Tambahkan alamat email</small></span><span style="margin-left:auto">↗</span></a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row"><div class="field"><label for="name">Nama</label><input id="name" name="name" autocomplete="name" placeholder="Nama kamu" required></div><div class="field"><label for="senderEmail">Email</label><input id="senderEmail" name="senderEmail" type="email" autocomplete="email" placeholder="nama@email.com" required></div></div>
+          <div class="field"><label for="subject">Subjek</label><input id="subject" name="subject" placeholder="Topik pesan" required></div>
+          <div class="field"><label for="message">Pesan</label><textarea id="message" name="message" placeholder="Tulis pesanmu di sini..." required></textarea></div>
+          <button class="btn" type="submit">Siapkan Email <span>↗</span></button>
+          <p class="form-hint">Formulir akan membuka aplikasi email di perangkatmu. Pastikan alamat email tujuan sudah diatur pada kode.</p><div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="container footer-inner"><strong>sinta<span style="color:var(--pink-deep)">.</span></strong><span>© 2026 Sinta Dwi Aryani. All Rights Reserved.</span><span>Dibuat dengan ♡ dan semangat belajar.</span></div></footer>
+<button class="back-top" id="backTop" aria-label="Kembali ke atas" title="Kembali ke atas">↑</button>
+<script>
+  // ISI BAGIAN INI DENGAN AKUN ASLI SEBELUM WEBSITE DIPUBLIKASIKAN.
+  // Nomor WhatsApp gunakan kode negara tanpa tanda +, spasi, atau strip (contoh format: 62812...).
+    // ISI BAGIAN INI DENGAN AKUN ASLI SEBELUM WEBSITE DIPUBLIKASIKAN.
+  const CONTACT = {
+    whatsapp: "6288803906164",
+    instagram: "arynnnnnnn_i",
+    email: "sintaryn27@gmail.com"
+  };
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  menuToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.textContent = open ? '×' : '☰';
+  });
+  navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    navLinks.classList.remove('open'); menuToggle.setAttribute('aria-expanded','false'); menuToggle.textContent='☰';
+  }));
+
+  const backTop = document.getElementById('backTop');
+  window.addEventListener('scroll', () => backTop.classList.toggle('show', window.scrollY > 450), {passive:true});
+  backTop.addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
+
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+    if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}
+  }), {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  function configureSocial(id, labelId, url, label) {
+    const link = document.getElementById(id), labelEl = document.getElementById(labelId);
+    if (url) { link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; labelEl.textContent = label; }
+    else {
+      link.href = '#contact';
+      link.addEventListener('click', e => { e.preventDefault(); document.getElementById('formStatus').textContent = 'Tambahkan detail akun asli pada bagian CONTACT di dalam kode website terlebih dahulu.'; });
+    }
+  }
+  configureSocial('whatsappLink','whatsappLabel',CONTACT.whatsapp ? `https://wa.me/${CONTACT.whatsapp.replace(/\D/g,'')}` : '',CONTACT.whatsapp ? 'Chat melalui WhatsApp' : '');
+  configureSocial('instagramLink','instagramLabel',CONTACT.instagram ? `https://www.instagram.com/${CONTACT.instagram.replace(/^@/,'')}/` : '',CONTACT.instagram ? '@'+CONTACT.instagram.replace(/^@/,'') : '');
+  configureSocial('emailLink','emailLabel',CONTACT.email ? `mailto:${CONTACT.email}` : '',CONTACT.email || '');
+
+  document.getElementById('contactForm').addEventListener('submit', event => {
+    event.preventDefault();
+    const status = document.getElementById('formStatus');
+    if (!CONTACT.email || !CONTACT.email.includes('@')) {
+      status.textContent = 'Formulir belum dapat mengirim pesan: isi alamat email tujuan yang benar pada objek CONTACT di kode website.';
+      return;
+    }
+    const name = document.getElementById('name').value.trim();
+    const sender = document.getElementById('senderEmail').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const body = `Nama: ${name}\nEmail: ${sender}\n\n${message}`;
+    window.location.href = `mailto:${CONTACT.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    status.textContent = 'Aplikasi email sedang dibuka. Periksa kembali pesan sebelum mengirim.';
+  });
+</script>
+</body>
+</html>
